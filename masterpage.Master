@@ -1,0 +1,72 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="masterpage.master.cs" Inherits="sweetShopManagementSystem.masterpage" %>
+<!DOCTYPE html>
+<html>
+    <head runat="server">
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <title>Jagannath Sweet Shop</title>
+        <link rel = "icon" href = "J.png" type = "image/x-icon" />
+        <asp:ContentPlaceHolder ID="head" runat="server">
+        </asp:ContentPlaceHolder>
+    </head>
+    <body>
+        <form id="form1" runat="server">
+            <div>
+                <header>
+                    <nav class = "navbar">
+                        <div class = "logo">
+                            <a href = "indexpage.aspx"><img src = "j.png" alt = "Sweet Shop Logo" class = "logo-img"></a>
+                            <a href = "indexpage.aspx" class = "logo-text">Jagannath Sweet Shop</a>
+                        </div>
+                        <ul class="nav-links">
+                            <li><a href="indexpage.aspx">Home</a></li>
+                            <li><a href="indexpage.aspx#products">Products</a></li>
+                            <li><a href="indexpage.aspx#contact">Contact Us</a></li>
+                            <li><a href="mycartpage.aspx">My Cart</a></li>
+                        </ul>
+                        <div class = "cta-buttons">
+                            <a href = "adminpanelpage.aspx" class = "btn admin-panel">Admin Panel</a>
+                            <a href = "menupage.aspx" class = "btn order-now">Order Now</a>
+                        </div>
+                        <div class = "auth-buttons">
+                            <a href = "loginpage.aspx" class = "btn login">Log In</a>
+                            <a href = "signuppage.aspx" class = "btn signup">Sign Up</a>
+                        </div>
+                    </nav>
+                </header>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+                <!-- Footer Section -->
+                <footer class = "footer-section">
+                    <div class = "footer-container">
+                        <div class = "footer-links">
+                            <h4>Quick Links</h4>
+                            <ul>
+                                <li><a href = "indexpage.aspx#about">About Us</a></li>
+                                <li><a href = "menupage.aspx">Products</a></li>
+                                <li><a href = "indexpage.aspx#offers">Special Offers</a></li>
+                                <li><a href = "#order">Order</a></li>
+                                <li><a href = "indexpage.aspx#contact">Contact Us</a></li>
+                                <li><a href = "indexpage.aspx#social">Social Feed</a></li>
+                            </ul>
+                        </div>
+                        <div class = "footer-contact">
+                            <h4>Contact Us</h4>
+                            <p>Email: jagannathsweets08@gmail.com</p>
+                            <p>Phone: +91 89059 64110</p>
+                            <p>Address: Jagannath Sweet Shop, Kuwarbav Stop, Ratnagiri, 415639</p>
+                        </div>
+                        <div class = "footer-social">
+                            <h4>Follow Us</h4>
+                            <a href = "https://www.instagram.com" target = "_blank">Instagram</a>
+                            <a href = "https://www.facebook.com" target = "_blank">Facebook</a>
+                        </div>
+                    </div>
+                    <div class = "footer-bottom">
+                        <p>&copy; 2024 Sweet Shop. All rights reserved.</p>
+                    </div>
+                </footer>
+            </div>
+        </form>
+    </body>
+</html>

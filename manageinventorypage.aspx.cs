@@ -1,0 +1,88 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Data.SqlClient;
+using System.Linq;
+using System.Web;
+using System.Web.Configuration;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Data;
+
+namespace sweetShopManagementSystem
+{
+    public partial class WebForm11 : System.Web.UI.Page
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void InventoryTable_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                String str = WebConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
+                SqlConnection con = new SqlConnection(str);
+                con.Open();
+                SqlCommand cmd = new SqlCommand();
+                SqlDataReader dr = cmd.ExecuteReader();
+                con.Close();
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex);
+            }
+        }
+
+        protected void EditItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                String str = WebConfigurationManager.ConnectionStrings["c1"].ConnectionString;
+                SqlConnection con = new SqlConnection(str);
+                con.Open();
+                SqlCommand cmd = new SqlCommand();
+                SqlDataReader dr = cmd.ExecuteReader();
+                con.Close();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex);
+            }
+        }
+
+        protected void CloseModal_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                String str = WebConfigurationManager.ConnectionStrings["c1"].ConnectionString;
+                SqlConnection con = new SqlConnection(str);
+                con.Open();
+                SqlCommand cmd = new SqlCommand();
+                SqlDataReader dr = cmd.ExecuteReader();
+                con.Close();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex);
+            }
+        }
+
+        protected void SaveChanges_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                String str = WebConfigurationManager.ConnectionStrings["c1"].ConnectionString;
+                SqlConnection con = new SqlConnection(str);
+                con.Open();
+                SqlCommand cmd = new SqlCommand();
+                SqlDataReader dr = cmd.ExecuteReader();
+                con.Close();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex);
+            }
+        }
+    }
+}

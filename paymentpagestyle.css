@@ -1,0 +1,43 @@
+﻿.payment-section {
+    width: 50%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px #f9f9f9;
+    text-align: center;
+}
+
+    .payment-section h1 {
+        font-size: 28px;
+        color: #ff6a00;
+        margin-bottom: 20px;
+    }
+
+.payment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+    .payment-form label {
+        font-size: 16px;
+        font-weight: bold;
+        color: #f9f9f9;
+        text-align: left;
+        width: 100%;
+    }
+
+    .payment-form input[type="text"],
+    .payment-form select,
+    .payment-form .btn {
+        width: 100%;
+        padding: 10px;
+        font-size: 14px;
+        border: 1px;
+    }
+.payment-form .total-amount {
+    background-color: rgb(128, 128, 128);
+    color: #ff0000;
+}

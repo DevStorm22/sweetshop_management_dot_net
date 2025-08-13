@@ -1,0 +1,300 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{38B6027C-88A5-4E59-82F9-3487DEE5B5BA}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>sweetShopManagementSystem</RootNamespace>
+    <AssemblyName>sweetShopManagementSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44300</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="adminpanelpagestyle.css" />
+    <Content Include="App_Data\sweetShopManagementSystem.mdf" />
+    <Content Include="App_Data\sweetShopManagementSystem_log.ldf">
+      <DependentUpon>sweetShopManagementSystem.mdf</DependentUpon>
+    </Content>
+    <Content Include="buynowpagestyle.css" />
+    <Content Include="changeorderstatuspagestyle.css" />
+    <Content Include="checkpaymentpagestyle.css" />
+    <Content Include="ChocolateDelight.jpg" />
+    <Content Include="Deliciouscake.jpg" />
+    <Content Include="FruitTart.jpg" />
+    <Content Include="indexpagestyle.css" />
+    <Content Include="J.png" />
+    <Content Include="JS.png" />
+    <Content Include="loginpagestyle.css" />
+    <Content Include="manageinventorypagestyle.css" />
+    <Content Include="masterpagestyle.css" />
+    <Content Include="menupagestyle.css" />
+    <Content Include="menusweet.jpg" />
+    <Content Include="mycartpagestyle.css" />
+    <Content Include="orderpagestyle.css" />
+    <Content Include="signupadminpagestyle.css" />
+    <Content Include="signuppagestyle.css" />
+    <Content Include="sweetmenupagestyle.css" />
+    <Content Include="paymentpagestyle.css" />
+    <Content Include="TraditionalSweets.jpg" />
+    <Content Include="updateitempagestyle.css" />
+    <Content Include="vieworderpagestyle.css" />
+    <Content Include="Web.config" />
+    <Content Include="indexpage.aspx" />
+    <Content Include="loginpage.aspx" />
+    <Content Include="signuppage.aspx" />
+    <Content Include="orderpage.aspx" />
+    <Content Include="adminpanelpage.aspx" />
+    <Content Include="updateitempage.aspx" />
+    <Content Include="changeorderstatuspage.aspx" />
+    <Content Include="manageinventorypage.aspx" />
+    <Content Include="vieworderpage.aspx" />
+    <Content Include="checkpaymentpage.aspx" />
+    <Content Include="buynowpage.aspx" />
+    <Content Include="signupadminpage.aspx" />
+    <Content Include="menupage.aspx" />
+    <Content Include="sweetmenupage.aspx" />
+    <Content Include="mycartpage.aspx" />
+    <Content Include="paymentpage.aspx" />
+    <Content Include="updatesweetpage.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="masterpage.Master.cs">
+      <DependentUpon>masterpage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="masterpage.Master.designer.cs">
+      <DependentUpon>masterpage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="indexpage.aspx.cs">
+      <DependentUpon>indexpage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="indexpage.aspx.designer.cs">
+      <DependentUpon>indexpage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="loginpage.aspx.cs">
+      <DependentUpon>loginpage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="loginpage.aspx.designer.cs">
+      <DependentUpon>loginpage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="signuppage.aspx.cs">
+      <DependentUpon>signuppage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="signuppage.aspx.designer.cs">
+      <DependentUpon>signuppage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="orderpage.aspx.cs">
+      <DependentUpon>orderpage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="orderpage.aspx.designer.cs">
+      <DependentUpon>orderpage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminpanelpage.aspx.cs">
+      <DependentUpon>adminpanelpage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminpanelpage.aspx.designer.cs">
+      <DependentUpon>adminpanelpage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="updateitempage.aspx.cs">
+      <DependentUpon>updateitempage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="updateitempage.aspx.designer.cs">
+      <DependentUpon>updateitempage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="changeorderstatuspage.aspx.cs">
+      <DependentUpon>changeorderstatuspage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="changeorderstatuspage.aspx.designer.cs">
+      <DependentUpon>changeorderstatuspage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="manageinventorypage.aspx.cs">
+      <DependentUpon>manageinventorypage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="manageinventorypage.aspx.designer.cs">
+      <DependentUpon>manageinventorypage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vieworderpage.aspx.cs">
+      <DependentUpon>vieworderpage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vieworderpage.aspx.designer.cs">
+      <DependentUpon>vieworderpage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="checkpaymentpage.aspx.cs">
+      <DependentUpon>checkpaymentpage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="checkpaymentpage.aspx.designer.cs">
+      <DependentUpon>checkpaymentpage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="buynowpage.aspx.cs">
+      <DependentUpon>buynowpage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="buynowpage.aspx.designer.cs">
+      <DependentUpon>buynowpage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="signupadminpage.aspx.cs">
+      <DependentUpon>signupadminpage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="signupadminpage.aspx.designer.cs">
+      <DependentUpon>signupadminpage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="menupage.aspx.cs">
+      <DependentUpon>menupage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="menupage.aspx.designer.cs">
+      <DependentUpon>menupage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sweetmenupage.aspx.cs">
+      <DependentUpon>sweetmenupage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sweetmenupage.aspx.designer.cs">
+      <DependentUpon>sweetmenupage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mycartpage.aspx.cs">
+      <DependentUpon>mycartpage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mycartpage.aspx.designer.cs">
+      <DependentUpon>mycartpage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="paymentpage.aspx.cs">
+      <DependentUpon>paymentpage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="paymentpage.aspx.designer.cs">
+      <DependentUpon>paymentpage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="updatesweetpage.aspx.cs">
+      <DependentUpon>updatesweetpage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="updatesweetpage.aspx.designer.cs">
+      <DependentUpon>updatesweetpage.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="masterpage.Master" />
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="UploadedImages\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>50504</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44300/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

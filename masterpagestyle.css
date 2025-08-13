@@ -1,0 +1,177 @@
+﻿/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Dark theme background */
+body {
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+/* Header Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Align items vertically center */
+    padding: 20px;
+    background-color: #1a1a1a; /* Dark background */
+}
+
+.logo {
+    display: flex;
+    align-items: center; /* Center align logo image and text */
+}
+
+.logo-img {
+    width: 45px; /* Set logo image width */
+    height: 45px; /* Set logo image height */
+    margin-right: 10px; /* Space between logo image and text */
+}
+
+.logo-text {
+    font-size: 30px;
+    color: #ff7f50; /* Coral color */
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    padding-left: 50px;
+}
+
+    .nav-links li {
+        margin: 0 20px;
+    }
+
+    .nav-links a {
+        color: #cccccc;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+        .nav-links a:hover {
+            color: #ff7f50; /* Coral on hover */
+        }
+
+.cta-buttons {
+    margin-left: auto; /* Pushes the CTA buttons to the right */
+}
+
+.btn {
+    background-color: #ff7f50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: background-color 0.3s ease;
+}
+
+    .btn:hover {
+        background-color: #ff5722; /* Darker coral on hover */
+}
+
+.admin-panel {
+    background-color: #ead910;
+}
+
+    .admin-panel:hover {
+        background-color: #c2b623;
+    }
+
+.order-now {
+    background-color: #ff7f50;
+}
+
+    .order-now:hover {
+    background-color: #ff5722; /* Darker coral on hover */
+}
+
+/* Log In / Sign Up Buttons */
+.auth-buttons {
+    display: flex;
+}
+
+.login {
+    background-color: #4CAF50; /* Green background for Log In */
+}
+
+    .login:hover {
+        background-color: #45a049; /* Darker green on hover */
+    }
+
+.signup {
+    background-color: #2196F3; /* Blue background for Sign Up */
+}
+
+    .signup:hover {
+        background-color: #0b7dda; /* Darker blue on hover */
+    }
+
+/* Footer Section Styles */
+.footer-section {
+    background-color: #121212; /* Dark background */
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-links,
+.footer-contact,
+.footer-social {
+    flex: 1;
+    margin: 10px;
+}
+
+    .footer-links h4,
+    .footer-contact h4,
+    .footer-social h4 {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+        color: #ff7f50; /* Coral color for headings */
+    }
+
+    .footer-links ul {
+        list-style: none;
+    }
+
+        .footer-links ul li {
+            margin: 10px 0;
+        }
+
+    .footer-links a,
+    .footer-social a {
+        color: #cccccc;
+        text-decoration: none;
+        transition: color 0.3s ease;
+        padding-right: 10px;
+    }
+
+        .footer-links a:hover,
+        .footer-social a:hover {
+            color: #ff7f50; /* Coral on hover */
+        }
+
+.footer-bottom {
+    margin-top: 20px;
+    padding: 10px 0;
+    border-top: 1px solid #333;
+}
+
+    .footer-bottom p {
+        color: #cccccc;
+        font-size: 0.9rem;
+    }

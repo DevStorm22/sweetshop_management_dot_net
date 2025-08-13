@@ -1,0 +1,47 @@
+﻿/* General Styling for Order Page */
+.order-tracking-section, .order-history-section {
+    padding: 100px 20px;
+    background-color: #121212;
+    text-align: center;
+    color: #fff;
+}
+
+    .order-tracking-section h2, .order-history-section h2 {
+        font-size: 2.5rem;
+        color: #ff7f50;
+        margin-bottom: 30px;
+    }
+
+/* Order Tracking Styling */
+.tracking-info {
+    max-width: 800px;
+    margin: 0 auto;
+    color: #cccccc;
+}
+
+.tracking-status {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.status-item {
+    flex: 1;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #2a2a2a;
+    transition: transform 0.3s ease;
+}
+
+    .status-item.completed {
+        background-color: #4caf50;
+    }
+
+    .status-item.active {
+        background-color: #ff7f50;
+    }
+
+    .status-item:not(:last-child) {
+        margin-right: 10px;
+    }
